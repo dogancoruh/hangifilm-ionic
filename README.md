@@ -1,6 +1,6 @@
 # HangiFilm? Ionic Source Code
 
---Abstract word game coded with ionic 2.x cross platform technology.--
+Abstract word game coded with ionic 2.x cross platform technology.
 
 * Coded with Typescript 2.x for Ionic 2.x.
 * 300 game items reduced to 10 to just give an example game to you.

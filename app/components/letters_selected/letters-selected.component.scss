@@ -1,0 +1,114 @@
+/**************************************/
+/* USER LETTERS                       */
+/**************************************/
+
+.user-letters {
+  background-image: url('../images/components/letters_selected/movie_name_dock.png');
+  background-position: top;
+  background-size: 100px 100%;
+  background-repeat: repeat-x;
+
+  @include flexbox;
+  @include align-items(center);
+  @include align-content(center);
+  @include justify-content(center);
+  @include flex-wrap(wrap);
+
+  width: 100%;
+  height: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.user-letters-word {
+  @include flexbox;
+  @include flex-wrap(nowrap);
+
+  width: auto;
+  /*border: 1px solid white;*/
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.user-letters-correct {
+  @extend .user-letters;
+
+  background-image: none;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00ff00+0,ffffff+100 */
+  background: #00ff00; /* Old browsers */
+  background: -moz-linear-gradient(top,  #00ff00 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #00ff00 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #00ff00 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff00', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.user-letters-incorrect {
+  @extend .user-letters;
+
+  background-image: none;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff1919+0,ff8c8c+100 */
+  background: #ff1919; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ff1919 0%, #ff8c8c 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ff1919 0%,#ff8c8c 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ff1919 0%,#ff8c8c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1919', endColorstr='#ff8c8c',GradientType=0 ); /* IE6-9 */
+}
+
+.user-letter {
+  @include flexbox;
+  @include align-items(center);
+  @include align-content(center);
+  @include justify-content(center);
+
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 1px;
+  margin-left: 1px;
+  background-color: #433545;
+  /*box-shadow: inset 0px 0px 10px 2px #000000;*/
+  font-family: "VAGRoundedBT";
+  font-size: 16px;
+  color: white;
+  cursor: default;
+}
+
+.user-letter-selected {
+  @include flexbox;
+  @include align-items(center);
+  @include align-content(center);
+  @include justify-content(center);
+
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  margin-right: 1px;
+  margin-left: 1px;
+  /*background-color: #f78119;*/
+  /*box-shadow: 0px 0px 5px 0px #333333, inset 0px 0px 20px -5px #504e4e;*/
+  border: 1px solid #504e4e;
+  font-family: "VAGRoundedBT";
+  font-size: 16px;
+  background-color: #612368;
+  color: white;
+  cursor: pointer;
+  /*text-shadow: 0px 0px 5px #000000;*/
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .user-letters {
+    height: 200px;
+  }
+
+  .user-letter {
+    width: 60px;
+    height: 60px;
+  }
+}

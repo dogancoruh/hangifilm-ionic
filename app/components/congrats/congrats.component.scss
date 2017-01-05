@@ -1,0 +1,126 @@
+/* ######################################### */
+/* VIEW CONGRATS                             */
+/* ######################################### */
+
+.view-congrats {
+  background-image: url('../images/components/congrats/background_congrats.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+
+.view-congrats.ng-hide-remove      { animation:0.2s fadeIn ease; }
+.view-congrats.ng-hide-add         { animation:0.2s fadeOut ease; }
+
+.view-congrats-content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 550px;
+  margin: auto;
+}
+
+.view-congrats-header {
+  font-family: "RoastBeefBTN";
+  font-size: 44px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+
+.view-congrats-text-correct {
+  font-family: "VAGRoundedBT";
+  font-size: 30px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  line-height: 35px;
+}
+
+.view-congrats-text-game-item-name {
+  background-color: red;
+  background-image: -webkit-linear-gradient(#fcf8fb, #ebd2e4);
+  background-image: -o-linear-gradient(#fcf8fb, #ebd2e4);
+  background-image: linear-gradient(#fcf8fb, #ebd2e4);
+  font-family: "RoastBeefBTN";
+  font-size: 34px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 35px;
+}
+
+.view-congrats-icon {
+  @include flexbox;
+  @include align-items(center);
+
+  width: 100%;
+  height: 80px;
+  margin-top: 15px;
+}
+
+.icon-coin-stack {
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  max-width: 140px;
+  max-height: 140px;
+}
+
+.view-congrats-text-win {
+  display: block;
+  font-family: "VAGRoundedBT";
+  font-size: 25px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding-top: 0px;
+  line-height: 35px;
+}
+
+.view-congrats-footer {
+  font-family: "RoastBeefBTN";
+  font-size: 44px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+.view-congrats-button-continue {
+  border: none;
+  border-radius: 2px;
+  /*
+  background-image: -webkit-linear-gradient(#fcf8fb, #ebd2e4);
+  background-image: -o-linear-gradient(#fcf8fb, #ebd2e4);
+  background-image: linear-gradient(#fcf8fb, #ebd2e4);
+  */
+  font-family: "VAGRoundedBT";
+  font-size: 24px;
+  width: 150px;
+  height: 40px;
+}
+
+.view-congrats-button-continue:active {
+  background-image: -webkit-linear-gradient(#ccc8cb, #bba2b4);
+  background-image: -o-linear-gradient(#ccc8cb, #bba2b4);
+  background-image: linear-gradient(#ccc8cb, #bba2b4);
+}

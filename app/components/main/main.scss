@@ -1,0 +1,123 @@
+.main-background {
+  @include flexbox;
+  @include flex-direction(column);
+  @include flex-wrap(nowrap);
+  @include justify-content(flex-start);
+  @include align-items(stretch);
+  @include align-content(stretch);
+
+  background-image: url('../images/components/main/background.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* ######################################### */
+/* ORANGE-BUTTON                             */
+/* ######################################### */
+
+.orange-button-big {
+  @include flexbox;
+  @include align-items(center);
+
+  background-color: #f78119;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  font-family: "RoastBeefBTN";
+  font-size: 14px;
+  /*box-shadow: 0px 0px 5px #000000;*/
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.orange-button-big:active {
+  background-color: #d57019;
+}
+
+.orange-button-big:disabled {
+  opacity: 0.5;
+  background: #CCC;
+}
+
+.orange-button-small {
+  background-color: #f78119;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: "VAGRoundedBT";
+  font-size: 16px;
+  /*box-shadow: 0px 0px 5px #000000;*/
+  text-align: center;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+
+  &:active {
+    background-color: #d57019;
+  }
+}
+
+.orange-button-text-left {
+  @include flexbox;
+  @include align-items(center);
+
+  padding-top: 2px;
+  width: 100%;
+  /*text-shadow: 0px 0px 5px #777777;*/
+  white-space: nowrap;
+}
+
+.orange-button-text-right {
+  @include flexbox;
+  @include align-items(center);
+
+  width: auto;
+  font-size: 16px;
+  /*text-shadow: 0px 0px 5px #777777;*/
+  white-space: nowrap;
+}
+
+/**************************************/
+/* TRANSITION KEYFRAMES               */
+/**************************************/
+
+@keyframes fadeIn {
+  from
+  {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0.0;
+  }
+  to
+  {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1.0;
+  }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}

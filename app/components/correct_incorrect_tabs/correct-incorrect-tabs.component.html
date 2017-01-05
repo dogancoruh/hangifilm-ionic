@@ -1,0 +1,10 @@
+<div class="correct_incorrect_tabs_container">
+    <div [hidden]="!correctAnswerTabVisible">
+        <div class="correct_tab">{{"CORRECT_ANSWER" | translate}}</div>
+        <div class="correct_tab_bottom"></div>
+    </div>
+    <div [hidden]="!incorrectAnswerTabVisible">
+        <div class="incorrect_tab">{{"INCORRECT_ANSWER" | translate}}</div>
+        <div class="incorrect_tab_bottom"></div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+30.05.2016
+-------------------------------------
+ok | All game sections must be converted to Component
+ok | Database items must be an instance of GameItem type
+ok | ZAZ decryptor algoritm must be ported
+ok | Audio class tsc.exe problem
+
+04.06.2016
+-------------------------------------
+ok | gulp task for copying custom fonts to build/fonts folder
+ok | gulp task for copying component images to build/images/... folder
+ok | gulp task for copying sounds to build/sounds folder
+ok | settings service mechanism needed
+ok | correct-incorrect-tabs not working
+ok | first-aid functions not working
+ok | congrats screen layout is wrong
+ok | level index problem (+1)
+ok | incorrect tab does not appear for input
+ok | in-app-purchase buttons not gettings disabled
+
+13.06.2016
+-------------------------------------
+ok | options dialog layout problem
+ok | gulp task for localizations
+ok | localization must be implemented

@@ -1,0 +1,16 @@
+<div class="available-letters">
+    <div class="available-letters-content">
+        <div class="letter-button-preview" [hidden]="!letterPreviewVisible">{{letter}}</div>
+        <button [class]="(letter.visible == true) ? 'available-letter' : 'available-letter-hidden'"
+                *ngFor="let letter of letters"
+                (click)="onLetterClicked($event, letter)">
+            <div *ngIf="letter.char == '!'">
+                <img class="icon-first-aid" src="./build/images/components/letters_available/icon_first_aid.png"/>
+            </div>
+            <div class="letter-button-content"
+                *ngIf="letter.char != &apos;!&apos;">
+                {{letter.char}}
+            </div>
+        </button>
+    </div>
+</div>

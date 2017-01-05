@@ -1,0 +1,137 @@
+.bar-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+
+  @include flexbox;
+  @include align-content(flex-start);
+  @include align-items(top);
+  @include justify-content(flex-start);
+
+  background-image: url('../images/components/header/bar_header.png');
+  background-position: top;
+  background-size: 100% 50px;
+  background-repeat: repeat-x;
+}
+
+.bar-header-left {
+  @include flexbox;
+  @include flex-wrap(nowrap);
+
+  padding-top: 0px;
+  padding-left: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.bar-header-left-options {
+  width: 35px;
+  height: 40px;
+  background-image: url('../images/components/header/icon_options.png');
+  background-position: center;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.bar-header-left-game-center {
+  width: 35px;
+  height: 40px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-image: url('../images/components/header/icon_game_center.png');
+  background-position: center;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.bar-header-center {
+  display: block;
+  min-width: 100px;
+  width: 100px;
+  height: 80px;
+}
+
+.bar-header-level {
+  width: 100px;
+  height: 100px;
+  background-image: url('../images/components/header/bar_header_level.png');
+  background-position: top;
+  background-size: 90px 70px;
+  background-repeat: no-repeat;
+}
+
+.bar-header-level-title {
+  padding-top: 2px;
+  display: block;
+  text-align: center;
+  font-family: "RoastBeefBTN";
+  font-size: 14px;
+  color: white;
+  /*text-shadow: 0px 0px 5px #777777;*/
+}
+
+.bar-header-level-value {
+  display: block;
+  text-align: center;
+  font-family: "RoastBeefBTN";
+  font-size: 30px;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  margin-top: -7px;
+  /*text-shadow: 0px 0px 5px #777777;*/
+}
+
+.bar-header-right {
+  @include flexbox;
+  @include flex-wrap(nowrap);
+  @include align-content(flex-end);
+  @include justify-content(flex-end);
+
+  padding-top: 0px;
+  padding-right: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.bar-header-right-coins-icon {
+  display: block;
+  width: 25px;
+  min-width: 25px;
+  height: 40px;
+  background-image: url('../images/components/header/icon_coins_with_multiplier.png');
+  background-position: left;
+  background-size: 25px 20px;
+  background-repeat: no-repeat;
+}
+
+.bar-header-right-coins-text {
+  @include flexbox;
+  @include align-items(center);
+
+  white-space: nowrap;
+  font-family: "RoastBeefBTN";
+  font-size: 16px;
+  color: #555555;
+  /*text-shadow: 0px 0px 1px #777777;*/
+  width: auto;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.bar-header-right-in-app-purchase {
+  display: block;
+  width: 35px;
+  height:40px;
+  background-image: url('../images/components/header/icon_in_app_purchase.png');
+  background-position: center;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

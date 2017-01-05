@@ -1,0 +1,40 @@
+.preview-background {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.preview-canvas {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  right: 10px;
+  bottom: 0px;
+  margin: auto;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+.preview {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.preview:active {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}

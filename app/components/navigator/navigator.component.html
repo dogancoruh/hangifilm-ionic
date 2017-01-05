@@ -1,0 +1,11 @@
+<div class="navigator">
+    <div class="navigator-previous">
+        <button class="button-navigator-previous" [hidden]="!debug" (click)="onButtonPreviousClicked($event)"></button>
+    </div>
+    <div class="movie-image-canvas">
+        <img id="buttonMovieImagePreview" [src]="imageUrl" class="movie-image" (click)="onButtonImageClicked($event)">
+    </div>
+    <div class="navigator-next">
+        <button class="button-navigator-next" [hidden]="!debug" (click)="onButtonNextClicked($event)"></button>
+    </div>
+</div>

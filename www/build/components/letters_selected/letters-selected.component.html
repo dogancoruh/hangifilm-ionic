@@ -1,0 +1,11 @@
+<div class="user-letters">
+    <div class="user-letters-word"
+         *ngFor="let word of words">
+        <div *ngFor="let letter of word.letters"
+             [class]="(letter.userChar != '') ? 'user-letter-selected' : 'user-letter'"
+             [hidden]="!letter.visible"
+             (click)="onLetterClicked($event, letter)">
+            {{letter.userChar}}
+        </div>
+    </div>
+</div>

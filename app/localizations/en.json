@@ -1,0 +1,18 @@
+{
+  "LEVEL": "Level",
+  "CORRECT_ANSWER": "Correct Answer!",
+  "INCORRECT_ANSWER": "Incorrect Answer!",
+  "FIRST_AID_TITLE": "NEED HELP?",
+  "FIRST_AID_ELIMINATE_LETTER": "Eliminate a letter",
+  "FIRST_AID_SHOW_LETTER": "Show a letter",
+  "FIRST_AID_ELIMINATE_LETTERS": "Eliminate letters",
+  "CLOSE": "CLOSE",
+  "OPTIONS_TITLE": "SETTINGS",
+  "IN_APP_PURCHASE_TITLE": "NEED GOLD?",
+  "GOLD": "Gold",
+  "CURRENCY": "USD",
+  "CONGRATS_TITLE": "CONGRATULATIONS!",
+  "CONGRATS_ANSWERED_CORRECTLY": "YOU KNOW THE MOVIE'S NAME CORRECTLY!",
+  "CONGRATS_WON_GOLD": "YOU GAINED {{coins}} GOLD(S)!",
+  "CONTINUE": "Continue"
+}

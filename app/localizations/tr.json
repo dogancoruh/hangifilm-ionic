@@ -1,0 +1,18 @@
+{
+  "LEVEL": "Seviye",
+  "CORRECT_ANSWER": "Doğru Cevap!",
+  "INCORRECT_ANSWER": "Yanlış Cevap!",
+  "FIRST_AID_TITLE": "YARDIM MI LAZIM?",
+  "FIRST_AID_ELIMINATE_LETTER": "1 Harf Ele",
+  "FIRST_AID_SHOW_LETTER": "1 Harf Aç",
+  "FIRST_AID_ELIMINATE_LETTERS": "Harfleri Ele",
+  "CLOSE": "KAPAT",
+  "OPTIONS_TITLE": "AYARLAR",
+  "IN_APP_PURCHASE_TITLE": "ALTIN MI LAZIM?",
+  "GOLD": "Altın",
+  "CURRENCY": "TRY",
+  "CONGRATS_TITLE": "TEBRİKLER!",
+  "CONGRATS_ANSWERED_CORRECTLY": "Filmin adını doğru bildin!",
+  "CONGRATS_WON_GOLD": "{{coins}} Altın Kazandın!",
+  "CONTINUE": "Devam"
+}

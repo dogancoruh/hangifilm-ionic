@@ -1,0 +1,142 @@
+/* ######################################### */
+/* DIALOG IN-APP PURCHASE                    */
+/* ######################################### */
+
+.dialog-in-app-purchase {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-in-app-purchase-panel {
+  @include flexbox;
+  @include flex-direction(column);
+
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  right: 20px;
+  bottom: 0px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 2px;
+  height: 325px;
+  max-width: 300px;
+}
+
+.dialog-in-app-purchase-header {
+  font-family: "RoastBeefBTN";
+  font-size: 16px;
+  text-align: center;
+  padding-top: 14px;
+  background-color: #612368;
+  color: white;
+  width: 100%;
+  height: 50px;
+  /*text-shadow: 0px 0px 5px #333333;*/
+}
+
+.dialog-in-app-purchase-content {
+  background: linear-gradient(#fcf8fb, #ebd2e4);
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.dialog-in-app-purchase-item {
+  @include flexbox;
+  @include align-items(center);
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-items(center);
+  @include align-content(center);
+
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f78119;
+  font-family: "RoastBeefBTN";
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dialog-in-app-purchase-item:active {
+  background-color: #f76100;
+}
+
+.dialog-in-app-purchase-item-text-left {
+  @include flexbox;
+  @include align-items(center);
+
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-family: "RoastBeefBTN";
+  font-size: 14px;
+  color: white;
+  /*text-shadow: 0px 0px 5px #333333;*/
+  padding-left: 10px;
+}
+
+.dialog-in-app-purchase-item-text-right {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(flex-end);
+
+  width: 190px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-family: "RoastBeefBTN";
+  font-size: 12px;
+  color: white;
+  /*text-shadow: 0px 0px 5px #333333;*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dialog-in-app-purchase-item-icon-coin {
+  width: 45px;
+  height: 40px;
+  /*box-shadow: 0px 0px 5px #000000;*/
+  background-position: center;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
+.dialog-in-app-purchase-coin-1 {
+  background-image: url('../images/components/in_app_purchase/coins_1.png');
+}
+.dialog-in-app-purchase-coin-2 {
+  background-image: url('../images/components/in_app_purchase/coins_2.png');
+}
+.dialog-in-app-purchase-coin-3 {
+  background-image: url('../images/components/in_app_purchase/coins_3.png');
+}
+.dialog-in-app-purchase-coin-4 {
+  background-image: url('../images/components/in_app_purchase/coins_4.png');
+}
+.dialog-in-app-purchase-coin-5 {
+  background-image: url('../images/components/in_app_purchase/coins_5.png');
+}
+
+.dialog-in-app-purchase-item-text-icon-plus {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/components/in_app_purchase/icon_in_app_purchase.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

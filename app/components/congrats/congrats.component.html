@@ -1,0 +1,10 @@
+<div class="view-congrats">
+    <div class="view-congrats-content">
+        <div class="view-congrats-header">{{"CONGRATS_TITLE" | translate}}</div>
+        <div class="view-congrats-text-correct">{{"CONGRATS_ANSWERED_CORRECTLY" | translate}}</div>
+        <div class="view-congrats-text-game-item-name">{{activeGameItemName}}</div>
+        <div class="view-congrats-icon"><img class="icon-coin-stack" src="./build/images/components/congrats/icon_coin_stack.png"></div>
+        <div class="view-congrats-text-win">{{"CONGRATS_WON_GOLD" | translate:{coins: settings.LEVEL_PRIZE_COINS_COUNT} }} </div>
+        <div class="view-congrats-footer"><button class="view-congrats-button-continue" (click)="onButtonContinueClicked($event)">{{"CONTINUE" | translate}}</button></div>
+    </div>
+</div>

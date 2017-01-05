@@ -1,0 +1,29 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import './flexbox/_flexbox';
+
+@import './fonts/_roast-beef-btn';
+@import './fonts/_vag-rounded-btn';
+
+@import './app.scss';
+
+@import '../components/main/main';
+@import '../components/header/header.component';
+@import '../components/navigator/navigator.component';
+@import '../components/letters_selected/letters-selected.component';
+@import '../components/letters_available/letters-available.component';
+@import '../components/correct_incorrect_tabs/correct-incorrect-tabs.component';
+@import '../components/banner/banner.component';
+@import '../components/options/options.component';
+@import '../components/congrats/congrats.component';
+@import '../components/in_app_purchase/in-app-purchase.component';
+@import '../components/preview/preview.component';
+@import '../components/congrats/congrats.component';
+@import '../components/first_aid/first_aid.component';

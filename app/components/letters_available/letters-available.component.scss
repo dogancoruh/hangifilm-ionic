@@ -1,0 +1,119 @@
+/* ######################################### */
+/* LETTERS                                   */
+/* ######################################### */
+
+.letters {
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-content(center);
+  @include justify-content(top);
+
+  background-image: url('../images/components/letters_available/letters_dock_background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  height: 240px;
+}
+
+.available-letters {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+
+  width: 100%;
+  height: 130px;
+}
+
+.available-letters-content {
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  @include align-content(center);
+  @include align-items(center);
+
+  padding-left: 0px;
+  padding-right: 0px;
+
+  border: 0px;
+
+  width: 100%;
+  height: 100px;
+
+  max-width: 300px;
+}
+
+.available-letter {
+  display: block;
+  line-height: 0px;
+  border: none;
+  padding: 0px;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  width: 38px;
+  height: 38px;
+  background-color: #f37f19;
+  border-radius: 5px;
+  color: white;
+  font-family: "VAGRoundedBT";
+  font-size: 24px;
+  text-shadow: 0px 0px 5px #333333;
+  align-items: center;
+  justify-content: center;
+  min-width: 10px;
+  min-height: 10px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: background-color 0.2s;
+}
+
+.available-letter:active {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: background-color 0.2s;
+  background-color: #612368;
+  color: #ffffff;
+}
+
+.available-letter-hidden {
+  @extend .available-letter;
+
+  visibility: hidden;
+}
+
+.icon-first-aid {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .letters {
+    bottom: 50px;
+    width: 100%;
+    height: 600px;
+  }
+
+  .available-letters {
+    height: 320px;
+  }
+
+  .available-letters-content {
+    max-width: 768px;
+  }
+
+  .available-letter {
+    font-size: 36px;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+  }
+}

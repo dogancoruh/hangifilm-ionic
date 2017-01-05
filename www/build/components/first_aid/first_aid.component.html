@@ -1,0 +1,20 @@
+<div class="dialog-first-aid">
+    <div class="dialog-first-aid-panel">
+        <div class="dialog-first-aid-header">{{"FIRST_AID_TITLE" | translate}}</div>
+        <div class="dialog-first-aid-content">
+            <button class="orange-button-big" [disabled]="coinsCount < settings.FIRST_AID_ELIMINATE_A_LETTER_COINS_PRICE" (click)="onButtonEliminateALetterClicked($event)">
+                <span class="orange-button-text-left">{{"FIRST_AID_ELIMINATE_LETTER" | translate}}</span>
+                <span class="orange-button-text-right">15x<img class="dialog-first-aid-icon_coins" src="./build/images/components/first_aid/icon_coins.png"></span>
+            </button>
+            <button class="orange-button-big" [disabled]="coinsCount < settings.FIRST_AID_SHOW_A_LETTER_COINS_PRICE" (click)="onButtonShowALetterClicked($event)">
+                <span class="orange-button-text-left">{{"FIRST_AID_SHOW_LETTER" | translate}}</span>
+                <span class="orange-button-text-right">50x<img class="dialog-first-aid-icon_coins" src="./build/images/components/first_aid/icon_coins.png"></span>
+            </button>
+            <button class="orange-button-big" [disabled]="coinsCount < settings.FIRST_AID_ELIMINATE_ALL_LETTERS_COINS_PRICE" (click)="onButtonEliminateLettersClicked($event)">
+                <span class="orange-button-text-left">{{"FIRST_AID_ELIMINATE_LETTERS" | translate}}</span>
+                <span class="orange-button-text-right">80x<img class="dialog-first-aid-icon_coins" src="./build/images/components/first_aid/icon_coins.png"></span>
+            </button>
+            <button class="orange-button-small" (click)="onButtonCloseClicked($event)">{{"CLOSE" | translate}}</button>
+        </div>
+    </div>
+</div>

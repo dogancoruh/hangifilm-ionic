@@ -1,0 +1,17 @@
+<div class="bar-header">
+    <div class="bar-header-left">
+        <div class="bar-header-left-options" (click)="onButtonOptionsClicked(event)"></div>
+        <div class="bar-header-left-game-center" (click)="onButtonGameCenterClicked(event)"></div>
+    </div>
+    <div class="bar-header-center">
+        <div class="bar-header-level">
+            <span class="bar-header-level-title">{{"LEVEL" | translate}}</span>
+            <span class="bar-header-level-value">{{level + 1}}</span>
+        </div>
+    </div>
+    <div class="bar-header-right">
+        <div class="bar-header-right-coins-icon"></div>
+        <div class="bar-header-right-coins-text">{{coinsCount}}</div>
+        <div class="bar-header-right-in-app-purchase" (click)="onButtonInAppPurchaseClicked(event)"></div>
+    </div>
+</div>

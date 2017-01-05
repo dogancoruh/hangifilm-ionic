@@ -1,0 +1,27 @@
+/**************************************/
+/* ADMOB BANNER                       */
+/**************************************/
+
+.admob-banner {
+  display: block;
+  background-image: url('../images/components/banner/admob_banner.png');
+  background-position: top;
+  background-size: 320px 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  background-color: green;
+  flex: 0;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .admob-banner {
+    height: 110px;
+    background-size: 768px 110px;
+  }
+}

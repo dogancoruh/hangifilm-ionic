@@ -1,0 +1,70 @@
+.correct_incorrect_tabs_container {
+  @include flexbox;
+  @include align-items(center);
+  @include align-content(center);
+  @include justify-content(center);
+  @include flex-wrap(no-wrap);
+
+  display: block;
+  height: 10px;
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 312px;
+}
+
+.correct_incorrect_tab {
+  @include flexbox;
+  @include align-items(center);
+  @include align-content(center);
+  @include justify-content(center);
+  @include flex-wrap(no-wrap);
+
+  font-family: "VAGRoundedBT";
+  font-size: 20px;
+  color: white;
+
+  margin: auto;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: block;
+  width: 170px;
+  height: 20px;
+  padding-top: 7px;
+  text-align: center;
+
+  text-shadow: 0px 0px 5px #777777;
+}
+
+.correct_tab {
+  @extend .correct_incorrect_tab;
+
+  background-color: #00ff00;
+}
+
+.incorrect_tab {
+  @extend .correct_incorrect_tab;
+
+  background-color: red;
+}
+
+.correct_incorrect_tab_bottom {
+  left: 0px;
+  right: 0px;
+  height: 20px;
+  display: block;
+}
+
+.correct_tab_bottom {
+  @extend .correct_incorrect_tab_bottom;
+
+  background-color: #00ff00;
+}
+
+.incorrect_tab_bottom {
+  @extend .correct_incorrect_tab_bottom;
+
+  background-color: red;
+}

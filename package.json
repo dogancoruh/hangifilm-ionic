@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@angular/common": "^2.0.0-rc.1",
+    "@angular/compiler": "^2.0.0-rc.1",
+    "@angular/core": "^2.0.0-rc.1",
+    "@angular/http": "^2.0.0-rc.1",
+    "@angular/platform-browser": "^2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
+    "@angular/router": "^2.0.0-rc.1",
+    "es6-shim": "^0.35.0",
+    "html-loader": "^0.4.3",
+    "ionic-angular": "2.0.0-beta.7",
+    "ionic-native": "^1.1.0",
+    "ionicons": "3.0.0",
+    "ng2-translate": "^2.1.0",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "systemjs-plugin-text": "git://github.com/systemjs/plugin-text.git",
+    "zone.js": "^0.6.12"
+  },
+  "devDependencies": {
+    "del": "2.2.0",
+    "gulp": "3.9.1",
+    "gulp-watch": "4.3.5",
+    "ionic-gulp-browserify-typescript": "^1.1.0",
+    "ionic-gulp-fonts-copy": "^1.0.0",
+    "ionic-gulp-html-copy": "^1.0.0",
+    "ionic-gulp-image-task": "^1.0.1",
+    "ionic-gulp-sass-build": "^1.0.0",
+    "ionic-gulp-scripts-copy": "^2.0.0",
+    "run-sequence": "1.1.5"
+  },
+  "name": "hangifilm",
+  "description": "HangiFilm: An Ionic project",
+  "cordovaPlugins": [],
+  "cordovaPlatforms": []
+}

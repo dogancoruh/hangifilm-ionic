@@ -1,3 +1,5 @@
+![alt tag](https://github.com/dogancoruh/hangifilm-ionic/blob/master/README.jpg?raw=true)
+
 # HangiFilm? Ionic Source Code
 
 Abstract word game coded with ionic 2.x cross platform technology.
